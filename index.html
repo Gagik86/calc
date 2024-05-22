@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="clobal-container">
+        <div class="paragraf">
+            <h2 class="title-calcul">Flesch Kincaid Calculator</h2>
+            <p>This Flesch Kincaid Calculator can be used to show how readable your text is by providing a Flesch
+                Readability Ease score and the Flesch-Kincaid</p>
+            <p>Grade Level score.</p>
+            <p><span>Instructions:</span> Cut-and-paste the text you want to test into the box below, then click
+                "Calculate"; this will give you the text's readability scores.</p>
+        </div>
+
+        <div class="calcul-area">
+            <button class="title-btn">Flesch-Kincaid Readability Calculator</button>
+            <textarea name="text" id="textarea" cols="70" rows="8"></textarea>
+            <div class="btn-container">
+                <p>Enter text here: </p>
+                <button id="calculator" class="btn" onclick="Calcul()">Calculator</button>
+                <button id="reset" class="btn" onclick="Reset()">Reset</button>
+            </div>
+
+        </div>
+
+        <div id="resultDiv" class="result-div">
+            <h3 class="title">Results</h3>
+            <p><span>Flesh-Kincaid Grade Level: </span><span id="fleshLevel"></span></p>
+            <p><span>Flesch Reading Ease Score: </span><span id="fleshScore"></span></p>
+            <p><span>Reading Level: College ( Difficult to read ) </span><span id="readingLevel"></span></p>
+            <p><span>Average Words per Sentence: </span><span id="averageWords"></span></p>
+            <p><span>Average Syllables per Word: </span><span id="averageSyllables"></span></p>
+            <p><span>Sentences: </span><span id="sentences"></span></p>
+            <p><span>Words: </span><span id="words"></span></p>
+
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>Score</th>
+                        <th>Estimated Reading Grade Level</th>
+                    </tr>
+                    <tr id="ex1" class="even">
+                        <td>90 to 100</td>
+                        <td>5th grade</td>
+                    </tr>
+                    <tr id="ex2" class="odd">
+                        <td>80 to 90</td>
+                        <td>6th grade</td>
+                    </tr>
+                    <tr id="ex3" class="even">
+                        <td>70 to 80</td>
+                        <td>7th grade</td>
+                    </tr>
+                    <tr id="ex4" class="odd">
+                        <td>60 to 70</td>
+                        <td>8th and 9th grade</td>
+                    </tr>
+                    <tr id="ex5" class="even">
+                        <td>50 to 60</td>
+                        <td>10th to 12th grade (high school)</td>
+                    </tr>
+                    <tr id="ex6" class="odd cref">
+                        <td>30 to 50</td>
+                        <td>College</td>
+                    </tr>
+                    <tr id="ex7" class="even">
+                        <td>0 to 30</td>
+                        <td>College graduate</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
